@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-blue.min.css" />
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<style>
+    body {
+        background: url("https://static.vecteezy.com/system/resources/previews/002/217/896/original/cinema-wallpaper-social-media-message-background-vector.jpg") center / cover;
+    }
+
+    a {
+        padding: 1em 1.5em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    button {
+        padding: 60px;
+        font-size: 40px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #448CFC;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 13px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #04948C;
+        padding: 80px;
+        font-size: 55px;
+    }
+
+    .list-container {
+        position: absolute;
+        top: 35%;
+        margin-left: 450px;
+    }
+</style>
+
+<!doctype html>
+<html lang="ro">
+
+<head>
+<title>Actors</title>
+</head>
+
+<body>
+<h1 style="text-align: center; font-size: 70px; color: white;" >Home</h1>
+<div class="list-container">
+    <div style="display:inline-block">
+        <button class="btn btn-primary btn-lg m-2 fix-button" onclick="location.href='{% url 'actors' %}';" value="Actors">
+            Actors
+        </button>
+    </div>
+    <span></span>
+    <div style="display:inline-block">
+        <button class="btn btn-primary btn-lg m-2 fix-button" onclick="location.href='{% url 'contracts' %}';" value="Contracts">
+            Contracts
+        </button>
+    </div>
+    <span></span>
+    <div style="display:inline-block">
+        <button class="btn btn-primary btn-lg m-2 fix-button" onclick="location.href='{% url 'movies' %}';" value="Movies">
+            Movies
+        </button>
+    </div>
+    <span></span>
+</div>
+
+</body>
+
+</html>
