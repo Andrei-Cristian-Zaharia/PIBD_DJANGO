@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pibd_project',
-        'USER': 'root',
-        'PASSWORD': 'andrei1423',
+        'USER': 'project',
+        'PASSWORD': 'parolaproiect123',
         'HOST': 'localhost',
         'PORT': '3306',
         'ATOMIC_REQUESTS': True
